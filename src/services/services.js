@@ -4,7 +4,7 @@ axios.defaults.baseURL = 'http://api.tvmaze.com/schedule';
 
 const GetImgList = SearchDate => {
   const country = `?country=US`;
-  const searchQweryDate = `&q=${SearchDate}`;
+  const searchQweryDate = `&date=${SearchDate}`;
   return axios.get(country + searchQweryDate);
 };
 

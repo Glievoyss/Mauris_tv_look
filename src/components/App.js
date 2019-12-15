@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import HeadTv from './HeadTv/HeadTv';
 import Logo from './Logo/Logo';
+import ListFilm from './ListFilm/ListFilm';
 import styles from './App.module.css';
 import GetImgList from '../services/services';
 
@@ -52,7 +53,6 @@ class App extends Component {
           this.setState({
             listCinema: data,
           });
-          // console.log(data);
         } else {
           this.errorInput('no films');
         }
@@ -62,11 +62,11 @@ class App extends Component {
 
   render() {
     const { changeDate } = this;
-    const { date } = this.state;
+    const { listCinema } = this.state;
     return (
       <>
         <Logo />
-        {!date ? (
+        {!listCinema ? (
           <>
             <HeadTv />
             <div className={styles.dataPicker}>
@@ -74,7 +74,7 @@ class App extends Component {
             </div>
           </>
         ) : (
-          <h2>{date}</h2>
+          <ListFilm listCinema={listCinema}></ListFilm>
         )}
       </>
     );
