@@ -5,9 +5,10 @@ import PropTypes from 'prop-types';
 import styles from './ListFilm.module.css';
 import CardFilm from '../CardFilm/CardFilm';
 
-const ListFilm = ({ listCinema }) => {
+const ListFilm = ({ listCinema, date }) => {
   return (
     <>
+      <h2>{date}</h2>
       <ul>
         {listCinema.map(({ id, show, name, number, season, airdate }) => (
           <CardFilm

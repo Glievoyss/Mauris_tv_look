@@ -1,5 +1,3 @@
-/*eslint-disable*/
-
 import React, { Component } from 'react';
 import 'react-daypicker/lib/DayPicker.css';
 import DayPicker from 'react-daypicker';
@@ -62,9 +60,20 @@ class App extends Component {
 
   render() {
     const { changeDate } = this;
-    const { listCinema } = this.state;
+    const { listCinema, date } = this.state;
     return (
       <>
+        {listCinema && (
+          <button
+            type="button"
+            onClick={() =>
+              this.setState({
+                date: '',
+                listCinema: '',
+              })
+            }
+          />
+        )}
         <Logo />
         {!listCinema ? (
           <>
@@ -74,7 +83,7 @@ class App extends Component {
             </div>
           </>
         ) : (
-          <ListFilm listCinema={listCinema}></ListFilm>
+          <ListFilm listCinema={listCinema} date={date} />
         )}
       </>
     );
