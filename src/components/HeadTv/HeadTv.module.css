@@ -1,0 +1,21 @@
+.tvContainer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.tvText {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 250px;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Open Sans';
+  color: rgb(51, 51, 51);
+  line-height: 1.067;
+}
+
+.tvImg {
+  width: 130px;
+  margin: 0 auto;
+}
