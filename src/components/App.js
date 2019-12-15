@@ -65,6 +65,7 @@ class App extends Component {
       <>
         {listCinema && (
           <button
+            className={styles.backButton}
             type="button"
             onClick={() =>
               this.setState({

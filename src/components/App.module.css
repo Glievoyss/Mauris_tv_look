@@ -1,3 +1,16 @@
+.backButton {
+  width: 15px;
+  height: 15px;
+  border-style: none;
+  background-color: #f5f5f5;
+  background-image: url('../assets/icons/arrow/arrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
 .dataPicker {
   margin: 0 auto;
   width: 280px;

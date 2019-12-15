@@ -8,8 +8,8 @@ import CardFilm from '../CardFilm/CardFilm';
 const ListFilm = ({ listCinema, date }) => {
   return (
     <>
-      <h2>{date}</h2>
-      <ul>
+      <h2 className={styles.dataList}>{date}</h2>
+      <ul className={styles.filmList}>
         {listCinema.map(({ id, show, name, number, season, airdate }) => (
           <CardFilm
             key={id}

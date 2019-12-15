@@ -1,0 +1,14 @@
+.dataList {
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 14px;
+  font-family: 'OpenSans';
+  color: rgb(51, 51, 51);
+  line-height: 1.067;
+  text-align: center;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.filmList {
+  list-style: none;
+}
