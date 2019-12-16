@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Mauris_tv_look/./static/css/main.50889364.chunk.css",
+    "main.js": "/Mauris_tv_look/./static/js/main.55df1cfb.chunk.js",
+    "main.js.map": "/Mauris_tv_look/./static/js/main.55df1cfb.chunk.js.map",
+    "runtime-main.js": "/Mauris_tv_look/./static/js/runtime-main.9a1e51f5.js",
+    "runtime-main.js.map": "/Mauris_tv_look/./static/js/runtime-main.9a1e51f5.js.map",
+    "static/css/2.e62aa5e7.chunk.css": "/Mauris_tv_look/./static/css/2.e62aa5e7.chunk.css",
+    "static/js/2.be534487.chunk.js": "/Mauris_tv_look/./static/js/2.be534487.chunk.js",
+    "static/js/2.be534487.chunk.js.map": "/Mauris_tv_look/./static/js/2.be534487.chunk.js.map",
+    "index.html": "/Mauris_tv_look/./index.html",
+    "precache-manifest.4403ea6dcbdbd04f17966687f4109469.js": "/Mauris_tv_look/./precache-manifest.4403ea6dcbdbd04f17966687f4109469.js",
+    "service-worker.js": "/Mauris_tv_look/./service-worker.js",
+    "static/css/2.e62aa5e7.chunk.css.map": "/Mauris_tv_look/./static/css/2.e62aa5e7.chunk.css.map",
+    "static/css/main.50889364.chunk.css.map": "/Mauris_tv_look/./static/css/main.50889364.chunk.css.map",
+    "static/media/main.css": "/Mauris_tv_look/./static/media/open-sans-v17-latin_cyrillic-ext_cyrillic-regular.e45f0984.woff2",
+    "static/media/tv.png": "/Mauris_tv_look/./static/media/tv.9fde5658.png"
+  }
+}
