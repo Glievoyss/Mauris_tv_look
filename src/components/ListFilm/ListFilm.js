@@ -1,6 +1,7 @@
 /*eslint-disable*/
 
 import React from 'react';
+import moment from 'moment';
 import PropTypes from 'prop-types';
 import styles from './ListFilm.module.css';
 import CardFilm from '../CardFilm/CardFilm';
@@ -8,7 +9,7 @@ import CardFilm from '../CardFilm/CardFilm';
 const ListFilm = ({ listCinema, date, changeImgOriginal }) => {
   return (
     <>
-      <h2 className={styles.dataList}>{date}</h2>
+      <h2 className={styles.dataList}>{moment(date).format('D MMMM YYYY')}</h2>
       <ul className={styles.filmList}>
         {listCinema.map(({ id, show, name, number, season, airdate }) => (
           <CardFilm

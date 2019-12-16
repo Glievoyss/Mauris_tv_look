@@ -6,7 +6,6 @@ import styles from './CardFilm.module.css';
 import notImage from '../../assets/images/notImage.jpg';
 
 const CardFilm = ({ show, name, number, season, changeImgOriginal }) => {
-  console.log(show.image);
   return (
     <>
       <li className={styles.filmCard}>

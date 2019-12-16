@@ -71,7 +71,6 @@ class App extends Component {
 
   changeImgOriginal = e => {
     const valueImgLink = e.currentTarget.dataset.bigimg;
-    console.log(valueImgLink);
     this.openModal();
     this.setState({ bigImg: valueImgLink });
   };
