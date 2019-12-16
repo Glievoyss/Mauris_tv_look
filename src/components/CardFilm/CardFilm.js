@@ -37,14 +37,7 @@ const CardFilm = ({ show, name, number, season, changeImgOriginal }) => {
   );
 };
 
-// PhotoCard.propTypes = {
-//   webformatURL: PropTypes.string.isRequired,
-//   largeImageURL: PropTypes.string.isRequired,
-//   likes: PropTypes.number.isRequired,
-//   views: PropTypes.number.isRequired,
-//   comments: PropTypes.number.isRequired,
-//   downloads: PropTypes.number.isRequired,
-//   changeImgForModal: PropTypes.func.isRequired,
+// CardFilm.propTypes = {
 // };
 
 export default CardFilm;

@@ -1,5 +1,4 @@
 /*eslint-disable*/
-
 import React, { Component } from 'react';
 import moment from 'moment';
 import PropTypes from 'prop-types';
@@ -10,6 +9,7 @@ class ListFilm extends Component {
   state = {
     listLenght: 2,
   };
+
   render() {
     const { listCinema, date, changeImgOriginal } = this.props;
     const { listLenght } = this.state;
@@ -38,7 +38,15 @@ class ListFilm extends Component {
           )}
         </ul>
         {listLenght === 2 && listCinema.length > 2 && (
-          <button className={styles.allListButton} type="button">
+          <button
+            className={styles.allListButton}
+            type="button"
+            onClick={() =>
+              this.setState({
+                listLenght: listCinema.length,
+              })
+            }
+          >
             Еще {listCinema.length - 2} сериалов
           </button>
         )}
@@ -47,14 +55,13 @@ class ListFilm extends Component {
   }
 }
 
-// PhotoCard.propTypes = {
-//   webformatURL: PropTypes.string.isRequired,
-//   largeImageURL: PropTypes.string.isRequired,
-//   likes: PropTypes.number.isRequired,
-//   views: PropTypes.number.isRequired,
-//   comments: PropTypes.number.isRequired,
-//   downloads: PropTypes.number.isRequired,
-//   changeImgForModal: PropTypes.func.isRequired,
-// };
+ListFilm.defaultProps = {
+  listCinema: [],
+};
+
+ListFilm.propTypes = {
+  date: PropTypes.string.isRequired,
+  changeImgOriginal: PropTypes.func.isRequired,
+};
 
 export default ListFilm;
