@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Mauris_tv_look/./precache-manifest.98f7f294729e5408901c4f73f71d2cf6.js"
+  "/Mauris_tv_look/./precache-manifest.bce79129b6d7eaaae2845fda292433c2.js"
 );
 
 self.addEventListener('message', (event) => {
