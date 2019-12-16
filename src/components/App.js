@@ -9,6 +9,7 @@ import Logo from './Logo/Logo';
 import ListFilm from './ListFilm/ListFilm';
 import styles from './App.module.css';
 import GetImgList from '../services/services';
+import Modal from './Modal/Modal';
 
 toast.configure({
   autoClose: 3500,
@@ -19,6 +20,8 @@ class App extends Component {
   state = {
     date: '',
     listCinema: '',
+    isModalOpen: false,
+    bigImg: '',
   };
 
   errorInput = infoError => {
@@ -58,9 +61,24 @@ class App extends Component {
       .catch(() => this.errorInput('no server'));
   };
 
+  openModal = () => {
+    this.setState({ isModalOpen: true });
+  };
+
+  closeModal = () => {
+    this.setState({ isModalOpen: false });
+  };
+
+  changeImgOriginal = e => {
+    const valueImgLink = e.currentTarget.dataset.bigimg;
+    console.log(valueImgLink);
+    this.openModal();
+    this.setState({ bigImg: valueImgLink });
+  };
+
   render() {
     const { changeDate } = this;
-    const { listCinema, date } = this.state;
+    const { listCinema, date, isModalOpen, bigImg } = this.state;
     return (
       <>
         {listCinema && (
@@ -84,8 +102,13 @@ class App extends Component {
             </div>
           </>
         ) : (
-          <ListFilm listCinema={listCinema} date={date} />
+          <ListFilm
+            listCinema={listCinema}
+            date={date}
+            changeImgOriginal={this.changeImgOriginal}
+          />
         )}
+        {isModalOpen && <Modal closeModal={this.closeModal} bigImg={bigImg} />}
       </>
     );
   }

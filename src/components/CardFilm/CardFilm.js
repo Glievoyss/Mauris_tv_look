@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 import styles from './CardFilm.module.css';
 import notImage from '../../assets/images/notImage.jpg';
 
-const CardFilm = ({ show, name, number, season }) => {
+const CardFilm = ({ show, name, number, season, changeImgOriginal }) => {
+  console.log(show.image);
   return (
     <>
       <li className={styles.filmCard}>
@@ -16,6 +17,8 @@ const CardFilm = ({ show, name, number, season }) => {
             className={styles.filmImage}
             src={show.image.medium}
             alt={name}
+            data-bigimg={show.image.original}
+            onClick={changeImgOriginal}
           />
         )}
         <div className={styles.filmInfo}>

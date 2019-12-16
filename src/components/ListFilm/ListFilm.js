@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import styles from './ListFilm.module.css';
 import CardFilm from '../CardFilm/CardFilm';
 
-const ListFilm = ({ listCinema, date }) => {
+const ListFilm = ({ listCinema, date, changeImgOriginal }) => {
   return (
     <>
       <h2 className={styles.dataList}>{date}</h2>
@@ -18,6 +18,7 @@ const ListFilm = ({ listCinema, date }) => {
             number={number}
             season={season}
             airdate={airdate}
+            changeImgOriginal={changeImgOriginal}
           />
         ))}
       </ul>
