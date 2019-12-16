@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://api.tvmaze.com/schedule';
+axios.defaults.baseURL = 'https://api.tvmaze.com/schedule';
 
 const GetImgList = SearchDate => {
   const country = `?country=US`;
