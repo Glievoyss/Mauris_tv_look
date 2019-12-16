@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "810bc843dfef968ce2d88cb6bfbeb97f",
+    "revision": "da930b8835768349bc06467b003df6e4",
     "url": "/Mauris_tv_look/./index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Mauris_tv_look/./static/css/2.e62aa5e7.chunk.css"
   },
   {
-    "revision": "407751ac546671770211",
-    "url": "/Mauris_tv_look/./static/css/main.27a10c4a.chunk.css"
+    "revision": "f1ba776fd899375708de",
+    "url": "/Mauris_tv_look/./static/css/main.50889364.chunk.css"
   },
   {
     "revision": "329a6597a57af6ba2b0d",
     "url": "/Mauris_tv_look/./static/js/2.be534487.chunk.js"
   },
   {
-    "revision": "407751ac546671770211",
-    "url": "/Mauris_tv_look/./static/js/main.2e2670b5.chunk.js"
+    "revision": "f1ba776fd899375708de",
+    "url": "/Mauris_tv_look/./static/js/main.55df1cfb.chunk.js"
   },
   {
     "revision": "3c0a75b8eb01239ce60a",
